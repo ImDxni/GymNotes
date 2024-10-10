@@ -14,6 +14,7 @@ class LoginTextField extends StatelessWidget {
 
     return SizedBox(width: 250,height:40,child:TextField(
       style: TextStyle(color: Colors.white70),
+      cursorColor: Colors.white,
       decoration: InputDecoration(
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
         hintText: text,
