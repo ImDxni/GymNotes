@@ -1,4 +1,6 @@
+import 'package:GymNotes/routing/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../components/button.dart';
@@ -47,7 +49,7 @@ class LoginPageState extends State<LoginPage> {
                   SizedBox(
                     height: 50,
                   ),
-                  LoginTextField(text: "Username"),
+                  LoginTextField(text: "Usernamess"),
                   SizedBox(
                     height: 20,
                   ),
@@ -55,7 +57,9 @@ class LoginPageState extends State<LoginPage> {
                   SizedBox(
                     height: 20,
                   ),
-                  Button(text: "Accedi ", callback: () => {print("premuto 2")}),
+                  Button(text: "Accedi ", callback: () => {
+                    context.go(routeHome)
+                  }),
                   SizedBox(
                     height: 15,
                   ),
